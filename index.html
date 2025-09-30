@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
-      <div class="container header-container">
+    <header class="header">
+      <div class="container desktop-header-container">
         <nav class="nav-menu">
           <a class="nav-menu-logo logo" href="./index.html"
             >Web<span class="logo-span">Studio</span></a
@@ -50,7 +50,71 @@
           </ul>
         </address>
       </div>
-    </header> -->
+      <div class="mobile-header-container">
+        <!--  -->
+        <a class="nav-menu-logo logo" href="./index.html"
+            >Web<span class="logo-span">Studio</span></a
+          >
+          <div class="nav-menu-backdrop is-open">
+            <button type="button" class="close-button menu-close-button">
+              <svg width="8" height="8" class="close-button-svg">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-nav-menu">
+              <li class="mobile-menu-item mobile-active">Studio</li>
+              <li class="mobile-menu-item">Portfolio</li>
+              <li class="mobile-menu-item">Contacts</li>
+            </ul>
+
+            <ul class="nav-contacts-menu">
+              <li class="mobile-contacts-item">
+                
+              <a class="address-menu-item tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+              </li>
+              <li class="mobile-contacts-item">
+                <a class="address-menu-item" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+              </li>
+
+            </ul>
+            <ul class="menu-social-media-buttons">
+              <li class="menu-social-icon social-icon">
+                <a href="" class="menu-social-icon-link social-icon-link">
+                  <svg width="24" height="24" class="social-icon-svg">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-social-icon social-icon">
+                <a href="" class="menu-social-icon-link social-icon-link">
+                  <svg width="24" height="24" class="social-icon-svg">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-social-icon social-icon">
+                <a href="" class="menu-social-icon-link social-icon-link">
+                  <svg width="24" height="24" class="social-icon-svg">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-social-icon social-icon">
+                <a href="" class="menu-social-icon-link social-icon-link">
+                  <svg width="24" height="24" class="social-icon-svg">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+
+    </header>
     <main>
       <section class="title-section">
         <div class="container">
@@ -495,7 +559,7 @@
 
     <div class="backdrop">
       <div class="modal-window">
-        <button type="button" class="modal-close-button">
+        <button type="button" class="modal-close-button close-button">
           <svg width="8" height="8" class="close-button-svg">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -587,5 +651,6 @@
       </div>
     </div>
     -->
+    
   </body>
 </html> 
