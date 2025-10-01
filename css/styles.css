@@ -801,11 +801,11 @@ ul {
     white-space: inherit;
     z-index: 11;
     position: relative;
+    display: flex;
+    align-items: center;   /* выравнивание по вертикали */
+    justify-content: space-between;
   }
 
-  .nav-menu-logo {
-    vertical-align:middle ;
-  }
 
 
   .title-section {
@@ -1008,6 +1008,52 @@ ul {
     margin: 0 auto;
     width: 280px;
     margin-top: 48px;
+  }
+
+  .menu-open-svg {
+    fill: #2F2F37;
+  }
+
+  .menu-open-button {
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: auto;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-content {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    padding: 96px 16px;
+  }
+
+  .footer-main, .footer-mailing, .email-input-form {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .footer-social-media {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc(100% - 80px);
+    padding: 0px;
+  }
+
+  .email-input-form {
+    gap: 16px;
   }
 
 }
