@@ -22,6 +22,9 @@
   <body>
     <header class="header">
       <div class="container desktop-header-container">
+        <a class="tablet-menu-logo logo" href="./index.html"
+            >Web<span class="logo-span">Studio</span></a
+          >
         <nav class="nav-menu">
           <a class="nav-menu-logo logo" href="./index.html"
             >Web<span class="logo-span">Studio</span></a
@@ -562,7 +565,7 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal-window">
         <button type="button" class="modal-close-button close-button">
           <svg width="8" height="8" class="close-button-svg">
@@ -577,7 +580,7 @@
           name="contacts-form"
           autocomplete="off"
           novalidate
-          class="inputs-container"
+          class="inputs-container-form"
         >
           <div class="input-div">
             <label for="user-name" class="contact-form-label">Name</label>
@@ -648,7 +651,7 @@
                   <use href="./images/icons.svg#icon-tick"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the <a href class="privacy-policy-link"> Privacy Policy</a>
+              <span>I accept the terms and conditions of the <a href class="privacy-policy-link"> Privacy Policy</a></span>
             </label>
           </div>
           <button class="submit-button" type="submit">Send</button>
