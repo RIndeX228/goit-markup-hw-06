@@ -828,8 +828,7 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
-    height: 432px;
-    padding: 52px 72px;
+    padding: 72px 52px;
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -849,6 +848,7 @@ ul {
     line-height: 40px;
     padding: 0;
     margin-bottom: 72px;
+    max-width: 216px;
   }
 
   .order-button {
@@ -860,7 +860,7 @@ ul {
 
   .values-section {
     width: 100%;
-    padding: 96px 5%;
+    padding: 96px 16px;
   }
 
   
@@ -1022,9 +1022,10 @@ ul {
     gap: 40px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     width: 280px;
-    margin-top: 48px;
+    position: absolute;
+    bottom: 40px;
+    left: 16px;
   }
 
   .menu-open-svg {
@@ -1049,28 +1050,43 @@ ul {
     flex-wrap: wrap;
     gap: 72px;
     padding: 96px 16px;
+    flex-direction: column;
+  }
+
+  .email-input-form {
+    display: block;
+  }
+
+  .footer-form-button {
+    margin: 0 auto;
+  }
+
+  .footer-form-paragraph, .footer-logo, .footer-social-media-header  {
+    text-align: center;
   }
 
   .footer-main, .footer-mailing, .email-input-form {
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    max-width: fit-content;
+    margin-inline: auto;
     width: 100%;
     padding: 0px;
   }
 
   .footer-social-media {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    max-width: fit-content;
+    margin-inline: auto;
+    
     width: calc(100% - 80px);
     padding: 0px;
   }
 
-  .email-input-form {
-    gap: 16px;
+  .footer-logo {
+    width: 100%;
+  }
+
+  .footer-form-input {
+    margin-bottom: 16px;
   }
 
   .backdrop {
@@ -1127,8 +1143,9 @@ ul {
 
 @media screen and (max-width: 1439px) and (min-width: 768px) {
   .container {
-    width: 100%;
+    width: 736px;
     padding: 0;
+    margin: 0 auto;
   }
   .address-menu-list {
     display: flex;
@@ -1210,14 +1227,15 @@ ul {
   }
 
   .values-section {
-    padding: 96px 16px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
 
   .values-section-list {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+   max-width: 736px;
     column-gap: 24px;
     row-gap: 72px;
     padding: 0;
@@ -1246,9 +1264,9 @@ ul {
   }
 
   .team-section {
-    min-width: 320px;
     width: 100%;
-    padding: 96px 108px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .team-section-item {
@@ -1258,7 +1276,8 @@ ul {
 
   .team-section-list {
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: center;
+
     column-gap: 24px;
     row-gap: 64px;
     padding: 0;
@@ -1285,7 +1304,7 @@ ul {
   }
 
   .portfolio-section-list {
-    width: 100%;
+    justify-content: center;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
@@ -1316,6 +1335,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
+    row-gap: 72px;
     padding: 96px 108px;
   }
 
@@ -1342,6 +1362,7 @@ ul {
   .email-input-form {
     column-gap: 24px;
   }
+
 
   .footer-main {
     margin: 0;
